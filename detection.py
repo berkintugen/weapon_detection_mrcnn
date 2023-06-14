@@ -4,7 +4,7 @@ from content.maskrcnn.visualize import get_mask_contours, draw_mask
 def detect_objects_in_images(image_folder, model_path):
     test_model, inference_config, class_names = load_inference_model(3, model_path)
 
-    # Set mask colors for each class
+    # Set mask colors
     pistol_color = (255, 0, 0)  # Red for pistol
     rifle_color = (0, 0, 255)  # Blue for rifle
 
